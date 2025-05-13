@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_tools_tools",
+  "info": {
+    "displayName": "Tool",
+    "icon": "rocket"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

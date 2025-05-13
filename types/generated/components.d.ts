@@ -1,5 +1,16 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface CompanyCompany extends Struct.ComponentSchema {
+  collectionName: 'components_company_companies';
+  info: {
+    displayName: 'Company';
+  };
+  attributes: {
+    icon: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    name: Schema.Attribute.String;
+  };
+}
+
 export interface SharedMedia extends Struct.ComponentSchema {
   collectionName: 'components_shared_media';
   info: {
@@ -66,14 +77,28 @@ export interface SharedSlider extends Struct.ComponentSchema {
   };
 }
 
+export interface ToolsTool extends Struct.ComponentSchema {
+  collectionName: 'components_tools_tools';
+  info: {
+    displayName: 'Tool';
+    icon: 'rocket';
+  };
+  attributes: {
+    icon: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    name: Schema.Attribute.String;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'company.company': CompanyCompany;
       'shared.media': SharedMedia;
       'shared.quote': SharedQuote;
       'shared.rich-text': SharedRichText;
       'shared.seo': SharedSeo;
       'shared.slider': SharedSlider;
+      'tools.tool': ToolsTool;
     }
   }
 }

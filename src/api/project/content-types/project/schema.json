@@ -28,10 +28,19 @@
     "Title": {
       "type": "string"
     },
-    "Tools": {
+    "Tool": {
       "type": "component",
       "repeatable": true,
-      "component": "shared.quote"
+      "component": "tools.tool"
+    },
+    "Company": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
     }
   }
 }

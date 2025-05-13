@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_company_companies",
+  "info": {
+    "displayName": "Company"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
