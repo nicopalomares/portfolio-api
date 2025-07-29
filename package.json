@@ -19,13 +19,16 @@
     "@strapi/plugin-cloud": "5.13.0",
     "@strapi/plugin-documentation": "^5.13.0",
     "@strapi/plugin-users-permissions": "5.13.0",
+    "@strapi/provider-email-sendgrid": "^5.19.0",
     "@strapi/strapi": "5.13.0",
     "fs-extra": "^10.0.0",
     "mime-types": "^2.1.27",
     "mysql2": "3.9.8",
+    "nodemailer": "^7.0.5",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
+    "strapi-provider-email-nodemailer": "^3.6.11",
     "styled-components": "^6.0.0"
   },
   "engines": {
